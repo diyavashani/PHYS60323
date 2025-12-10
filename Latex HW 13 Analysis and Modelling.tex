@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{pslatex}
+\usepackage{epsfig}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}%renewcommand{\topfraction}{1.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\setlength {\textwidth}{6.6in}
+\hoffset=-1.0in
+\oddsidemargin=1.00in
+\marginparsep=0.0in
+\marginparwidth=0.0in                                                                               
+\setlength {\textheight}{9.0in}
+\voffset=-1.00in
+\topmargin=1.0in
+\headheight=0.0in
+\headsep=0.00in
+\footskip=0.50in                                         
+\setcounter{page}{1}
+\begin{document}
+\def\pos{\medskip\quad}
+\def\subpos{\smallskip \qquad}
+\newfont{\nice}{cmr12 scaled 1250}
+\newfont{\name}{cmr12 scaled 1080}
+\newfont{\swell}{cmbx12 scaled 800}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+{\large
+PHYS 20323/60323: Fall 2025 - LaTeX Example
+}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{center}
+\begin{enumerate}
+    \item At time $t = 0$ a particle is represented by the wave function
+
+    \[
+    \Psi(x) =
+    \begin{cases}
+      A \dfrac{x}{a}, & 0 \le x \le a,\\[6pt]
+      A \dfrac{(b - x)}{(b - a)}, & a \le x \le b,\\[6pt]
+      0, & \text{otherwise.}
+    \end{cases}
+    \]
+
+    where A, $a$, and $b$ are constants.
+
+    \begin{enumerate}
+        \item  (3.3 points) Normalize $\Psi$ (i.e., find $A$ terms of $a$ and $b$).
+        \item (3.3 points) Where is the particle likely to be found at $t = 0$?.
+        \item[(c)] (3.4 points) What is the expectation value of $x$?.
+    \end{enumerate}
+\item \textbf{The following questions refer to stars in the Table below.}\\
+\textit{Note: There may be multiple answers.}
+
+\begin{center}
+\begin{tabular}{|c | c | c | c | c | c | c | }
+\hline
+Name  & Mass & Luminosity & Lifetime & Temperature & Radius & Variable ? \\ \hline
+\delta \text{ Scu.} & 2.0 M_\odot & & 5.0 \times 10^8 \text{ years} & & 2.0 R_\odot & Y \\ \hline
+\gamma \text{ Del.} & 0.7 M_\odot & & 4.5 \times 10^{10}  \text{ years} & 5000 K & & N \\ \hline
+\beta \text{ Cyg.} & 1.3 M_\odot & 3.5 L_\odot & & & & Y \\ \hline
+\eta \text{ Car.} & 60. M_\odot & 10^6 L_\odot & 8.0 \times 10^5 \text{ years}  &  & & Y \\ \hline
+\epsilon \text{ Eri.} & 6.0 M_\odot & 10^3 L_\odot & & 20,000 K & & N \\ \hline
+\alpha \text{ Cen.} & 1.0 M_\odot & & & 6000 K & 1.0 R_\odot & N \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+    \item (4 points) Which of these stars will produce a planetary nebula.
+    \item (4 points) Elements heavier than \texttt{Carbon} will be produced in which stars.
+\end{enumerate}
+
+    \item An electron is found to be in the spin state (in the $z$-basis): \chi = A \begin{pmatrix}
+3i\\
+4
+\end{pmatrix}
+
+
+\begin{enumerate}
+        \item (5 points) Determine the possible values of A such that the state is normalized.
+        \item (5 points) Find the expectation values of the operators \(\color{red}{S_x}\), \(\color{BrickRed}{S_y}\), \(\color{orange}{S_z}\) and  \(\vec{S}^{\,2}\).
+    \end{enumerate}
+
+
+\indent The matrix representations in the $z$-basis for the components of electron spin operators are given by:
+
+\[
+\textcolor{red}{\mathbf{S_x}} \textcolor{red}{= \frac{\hbar}{2}}
+\textcolor{red}{
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}}
+\; \color{BrickRed}{;} \qquad
+\color{BrickRed}{\mathbf{S_y}}
+\color{BrickRed}{= \frac{\hbar}{2}}
+\color{BrickRed}{
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}}}
+\; \color{Orange}{;} \qquad
+\textcolor{orange}{\mathbf{S_z}}
+= \frac{\hbar}{2}
+\textcolor{orange}{
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}}
+\]
+
+
+
+\end{enumerate}
+
+
+\end{document}
